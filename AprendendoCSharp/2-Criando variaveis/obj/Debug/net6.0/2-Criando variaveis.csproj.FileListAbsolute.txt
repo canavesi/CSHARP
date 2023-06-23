@@ -1,0 +1,15 @@
+C:\Estudo\CSHARP\AprendendoCSharp\2-Criando variaveis\bin\Debug\net6.0\2-Criando variaveis.exe
+C:\Estudo\CSHARP\AprendendoCSharp\2-Criando variaveis\bin\Debug\net6.0\2-Criando variaveis.deps.json
+C:\Estudo\CSHARP\AprendendoCSharp\2-Criando variaveis\bin\Debug\net6.0\2-Criando variaveis.runtimeconfig.json
+C:\Estudo\CSHARP\AprendendoCSharp\2-Criando variaveis\bin\Debug\net6.0\2-Criando variaveis.dll
+C:\Estudo\CSHARP\AprendendoCSharp\2-Criando variaveis\bin\Debug\net6.0\2-Criando variaveis.pdb
+C:\Estudo\CSHARP\AprendendoCSharp\2-Criando variaveis\obj\Debug\net6.0\2-Criando variaveis.csproj.AssemblyReference.cache
+C:\Estudo\CSHARP\AprendendoCSharp\2-Criando variaveis\obj\Debug\net6.0\2-Criando variaveis.GeneratedMSBuildEditorConfig.editorconfig
+C:\Estudo\CSHARP\AprendendoCSharp\2-Criando variaveis\obj\Debug\net6.0\2-Criando variaveis.AssemblyInfoInputs.cache
+C:\Estudo\CSHARP\AprendendoCSharp\2-Criando variaveis\obj\Debug\net6.0\2-Criando variaveis.AssemblyInfo.cs
+C:\Estudo\CSHARP\AprendendoCSharp\2-Criando variaveis\obj\Debug\net6.0\2-Criando variaveis.csproj.CoreCompileInputs.cache
+C:\Estudo\CSHARP\AprendendoCSharp\2-Criando variaveis\obj\Debug\net6.0\2-Criando variaveis.dll
+C:\Estudo\CSHARP\AprendendoCSharp\2-Criando variaveis\obj\Debug\net6.0\refint\2-Criando variaveis.dll
+C:\Estudo\CSHARP\AprendendoCSharp\2-Criando variaveis\obj\Debug\net6.0\2-Criando variaveis.pdb
+C:\Estudo\CSHARP\AprendendoCSharp\2-Criando variaveis\obj\Debug\net6.0\2-Criando variaveis.genruntimeconfig.cache
+C:\Estudo\CSHARP\AprendendoCSharp\2-Criando variaveis\obj\Debug\net6.0\ref\2-Criando variaveis.dll
