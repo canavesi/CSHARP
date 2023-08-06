@@ -2,7 +2,7 @@
 string mensagemDeBoasVindas = "Boas vindas ao Screen Sound";
 List<string> listaDasBandas = new List<string> { "U2", "The Beatles", "Calypso" };
 
-void ExibirMensagemDeBoasVindas()
+void ExibirLogo()
 {
     Console.WriteLine(@"
 
@@ -19,37 +19,61 @@ void ExibirMensagemDeBoasVindas()
 
 void ExibirOpcoesDoMenu()
 {
+    ExibirLogo();
     Console.WriteLine("\nDigite 1 para registrar uma banda");
     Console.WriteLine("Digite 2 para mostrar todas as bandas");
     Console.WriteLine("Digite 3 para avaliar uma banda");
     Console.WriteLine("Digite 4 para exibir a média de uma banda");
     Console.WriteLine("Digite -1 para sair");
+
+    Console.Write("\nDigite a sua opção: ");
+    string opcaoEscolhida = Console.ReadLine()!;
+    int opcaoEscolhidaNumerica = int.Parse(opcaoEscolhida);
+
+    switch (opcaoEscolhidaNumerica)
+    {
+        case 1:  RegistrarBanda();
+            break;
+        case 2:  MostrarBandasRegistradas();
+            break;
+        case 3:  Console.WriteLine("Você digitou a opção " + opcaoEscolhidaNumerica);
+            break;
+        case 4:  Console.WriteLine("Você digitou a opção " + opcaoEscolhidaNumerica);
+            break;
+        case -1: Console.WriteLine("Tchau :)");
+            break;
+        default:   Console.WriteLine("Opção Invalida");
+            break;
+    }
+
 }
 
-ExibirMensagemDeBoasVindas();
+void RegistrarBanda()
+{
+    Console.Clear();
+    Console.WriteLine("***************************");
+    Console.WriteLine("Registro de Bandas");
+    Console.WriteLine("***************************");
+    Console.Write("Digite o nome da banda que voce deseja: ");
+    String nomeDaBanda = Console.ReadLine()!;
+    Console.WriteLine("A banda " + nomeDaBanda + " Foi registrada");
+    Console.WriteLine($"A banda {nomeDaBanda} Foi registrada");
+    Thread.Sleep(5000);
+    ExibirOpcoesDoMenu();
+}
+
+void MostrarBandasRegistradas()
+{
+    Console.Clear();
+    Console.WriteLine("************************************");
+    Console.WriteLine("Exibindo todas as bandas registradas");
+    Console.WriteLine("************************************");
+    for (int i = 0; i < listaDasBandas.Count; i++)
+    {
+        Console.WriteLine($"Banda: {listaDasBandas[i]}");
+    }
+}
+
 ExibirOpcoesDoMenu();
 
-Console.Write("\nDigite a sua opção: ");
-string opcaoEscolhida = Console.ReadLine()!;
-int opcaoEscolhidaNumerica = int.Parse(opcaoEscolhida);
-
-switch (opcaoEscolhidaNumerica)
-{
-    case 1: Console.WriteLine("Você digitou a opção " + opcaoEscolhidaNumerica);
-        break;
-    case 2:
-        Console.WriteLine("Você digitou a opção " + opcaoEscolhidaNumerica);
-        break;
-    case 3:
-        Console.WriteLine("Você digitou a opção " + opcaoEscolhidaNumerica);
-        break;
-    case 4:
-        Console.WriteLine("Você digitou a opção " + opcaoEscolhidaNumerica);
-        break;
-    case -1:
-        Console.WriteLine("Você digitou a opção " + opcaoEscolhidaNumerica);
-        break;
-    default: Console.WriteLine("Opção Invalida");
-        break;
-}
 
