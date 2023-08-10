@@ -1,6 +1,8 @@
 ﻿// Screen Sound
 string mensagemDeBoasVindas = "Boas vindas ao Screen Sound";
-List<string> listaDasBandas = new List<string> { "U2", "The Beatles", "Calypso" };
+//List<string> listaDasBandas = new List<string> { "U2", "The Beatles", "Calypso" };
+
+Dictionary<string, List<int>> bandasRegistradas = new Dictionary<string, List<int>>();
 
 void ExibirLogo()
 {
@@ -51,12 +53,10 @@ void ExibirOpcoesDoMenu()
 void RegistrarBanda()
 {
     Console.Clear();
-    Console.WriteLine("***************************");
-    Console.WriteLine("Registro de Bandas");
-    Console.WriteLine("***************************");
+    ExibirTituloDaOpacao("Registro de Bandas");
     Console.Write("Digite o nome da banda que voce deseja: ");
     String nomeDaBanda = Console.ReadLine()!;
-    listaDasBandas.Add(nomeDaBanda);
+    bandasRegistradas.Add(nomeDaBanda, new List<int>());
     Console.WriteLine("A banda " + nomeDaBanda + " Foi registrada");
     Console.WriteLine($"A banda {nomeDaBanda} Foi registrada");
     Thread.Sleep(5000);
@@ -66,10 +66,7 @@ void RegistrarBanda()
 void MostrarBandasRegistradas()
 {
     Console.Clear();
-    Console.WriteLine("************************************");
-    Console.WriteLine("Exibindo todas as bandas registradas");
-    Console.WriteLine("************************************\n");
-   
+    ExibirTituloDaOpacao("Exibindo todas as bandas registradas");
     /*
     * for (int i = 0; i < listaDasBandas.Count; i++)
     {
@@ -77,7 +74,7 @@ void MostrarBandasRegistradas()
     }
    */
 
-    foreach (String banda in listaDasBandas)
+    foreach (String banda in bandasRegistradas.Keys)
     {
         Console.WriteLine($"Banda: {banda}");
 
@@ -89,6 +86,15 @@ void MostrarBandasRegistradas()
     Console.ReadKey();
     ExibirOpcoesDoMenu();
 
+}
+
+void ExibirTituloDaOpacao( string titulo)
+{
+    int quantidadeDeLetras = titulo.Length;
+    string asteriscos = string.Empty.PadLeft(quantidadeDeLetras, '*');
+    Console.WriteLine(asteriscos);
+    Console.WriteLine(titulo);
+    Console.WriteLine(asteriscos + "\n");
 }
 
 ExibirOpcoesDoMenu();
